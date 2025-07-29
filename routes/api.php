@@ -10,7 +10,7 @@ Route::get('/media', [MediaController::class, 'index']);
 
 Route::post('/enquiry', [EnquiryController::class, 'store']);
 
-Route::get('/sync-cloudinary-images', [CloudinarySyncController::class, 'syncImages']);
+Route::get('/sync-cloudinary-images', [CloudinarySyncController::class, 'sync']);
 
 
 Route::get('/test-deploy', function () {
