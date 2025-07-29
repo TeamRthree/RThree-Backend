@@ -18,6 +18,7 @@ return new class extends Migration
         $table->string('category');
         $table->text('src'); // cloudinary secure_url
         $table->timestamps();
+        $table->string('public_id')->unique();
     });
     }
 
