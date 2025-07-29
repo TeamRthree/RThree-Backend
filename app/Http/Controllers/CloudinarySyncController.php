@@ -9,9 +9,9 @@ class CloudinarySyncController extends Controller
 {
     public function syncImages()
     {
-        $cloudName = env('dlwy94hlr');
-        $apiKey = env('976334156866845');
-        $apiSecret = env('epHHyUCBkSFqh0DhluBAOrWJOVw');
+        $cloudName = env('CLOUDINARY_CLOUD_NAME');
+        $apiKey = env('CLOUDINARY_API_KEY');
+        $apiSecret = env('CLOUDINARY_API_SECRET');
 
         $url = "https://api.cloudinary.com/v1_1/{$cloudName}/resources/image";
 
