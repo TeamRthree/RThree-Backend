@@ -10,5 +10,5 @@ class Media extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['type', 'name', 'category', 'src'];
+    protected $fillable = ['type', 'name', 'category', 'src','public_id'];
 }

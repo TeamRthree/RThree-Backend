@@ -28,6 +28,8 @@ class MediaController extends Controller
         $media->name = $name;
         $media->category = $category;
         $media->src = $url;
+        $media->public_id = $publicId;
+
         $media->save();
 
         return response()->json(['message' => 'Saved', 'data' => $media]);
