@@ -26,7 +26,7 @@ class EnquiryController extends Controller
         $enquiry = Enquiry::create($validated);
 
         // ✅ Send email to team
-        Mail::to('marvelmarket888@gmail.com')->send(new EnquiryToTeam($enquiry));
+        Mail::to('connect@rthree.in')->send(new EnquiryToTeam($enquiry));
 
         // ✅ Send confirmation to client
         Mail::to($enquiry->email)->send(new EnquiryToClient($enquiry));
